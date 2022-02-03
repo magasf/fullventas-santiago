@@ -1,4 +1,5 @@
 import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import CardWidget from "./cardWidget";
 
 
 const NavBar = () => {
@@ -21,10 +22,9 @@ const NavBar = () => {
                             </NavDropdown>
                         </Nav>
                         <Nav>
+                        <CardWidget/>
                             <Nav.Link href="#deets">More deets</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
-                                Dank memes
-                            </Nav.Link>
+                            
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
