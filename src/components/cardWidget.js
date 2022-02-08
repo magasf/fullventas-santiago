@@ -4,7 +4,7 @@ import React from "react"
 function CardWidget(props) {
     let count = 0
     const CountFavs =()=>{
-        console.log(count+1)
+        console.log(count+ " Cantidad")
         
     }
     return (

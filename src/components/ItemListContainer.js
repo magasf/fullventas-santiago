@@ -3,7 +3,7 @@ import React from "react";
 //cards.addEventListener('click', e =>{
     /*addCarrito(e)
 })*/
-export function ItemListContainer (props) {
+export function ItemListContainer ({greeting}) {
 
     
     
@@ -13,7 +13,7 @@ export function ItemListContainer (props) {
     return(
         <div>
             
-            <p>{props.value}</p>
+            <p>{greeting}</p>
 
         </div>
 
