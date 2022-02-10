@@ -21,11 +21,7 @@ const NavBar = () => {
                                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                             </NavDropdown>
                         </Nav>
-                        <Nav>
-                        <CardWidget/>
-                            <Nav.Link href="#deets">More deets</Nav.Link>
-                            
-                        </Nav>
+                        <CardWidget className="Contador"/>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
