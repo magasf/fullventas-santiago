@@ -2,14 +2,14 @@
 
 
 let is_ok = true;
-const {data} = require('./data.js');
 
-console.log(data)
-const customFetch = (timeout, data) => {
+
+
+export const customFetch = (timeout, task) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if(is_ok) {
-                resolve(data);
+                resolve(task);
             } else {
                 reject('KO');
             }
@@ -17,6 +17,3 @@ const customFetch = (timeout, data) => {
     });
 };
 
-customFetch(2000, data)
-.then((data) => console.log('Se cargan las img', data))
-.catch((error) => console.log('No se pueden cargar las img', error))

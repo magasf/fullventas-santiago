@@ -1,91 +1,94 @@
-import React from "react";
+import React, {useState} from "react";
 import { CardGroup, Card } from "react-bootstrap";
-import {useState} from 'react';
+import ItemList from "./itemList";
 
 
-//const {data} = require('./data.js');
 
-
-export default function Item({ name, img, cost, descript }) {
-    const [data, setData] = useState([
-
+const Item = () => {
+   const [item, setItem] = useState(
+       
+       [
         {
             id: 1,
             name: "Casa azul",
-            img: "./Fotos/house1.jpg",
+            img: "../IMG/house1.jpg",
             cost: 45000,
             descript: '',
         },
         {
             id: 2,
             name: "Casa ladrillos",
-            img: "./Fotos/house2.jpg",
+            img: "../IMG/house2.jpg",
             cost: 16000,
             descript: '',
         },
         {
             id: 3,
             name: "Casa galeria",
-            img: "./Fotos/house3.jpg",
+            img: "../IMG/house3.jpg",
+            cost: 14000,
+            descript: '',
+        },
+        
+        {
+            id: 4,
+            name: "Casa ladrillos",
+            img: "../IMG/house2.jpg",
+            cost: 16000,
+            descript: '',
+        },
+        {
+            id: 5,
+            name: "Casa galeria",
+            img: "../IMG/house3.jpg",
             cost: 14000,
             descript: '',
         },
         {
-            id: 4,
+            id: 6,
             name: "Casa pequeña",
-            img: "./Fotos/house4.jpg",
+            img: ["./IMG/house4.jpg"],
             cost: 7500,
             descript: '',
+        },
+        {
+            id: 7,
+            name: "Casa ladrillos",
+            img: "../IMG/house2.jpg",
+            cost: 16000,
+            descript: '',
+        },
+        {
+            id: 8,
+            name: "Casa galeria",
+            img: "../IMG/house3.jpg",
+            cost: 14000,
+            descript: '',
+        },
+        {
+            id: 9,
+            name: "Casa ladrillos",
+            img: "../IMG/house2.jpg",
+            cost: 16000,
+            descript: '',
         }
+      ]);
+   
 
-    ])
     return (
-        <article>
-            <ul>
-                {data.map(u => <li key={u.id}>{u.name} </li>)}
-            </ul>
+        <article className="Item">
+           {item.map(List => {
+               return (
 
+               
+               <ItemList key={List.id} name={List.name} img={List.img} cost={List.cost} descript={List.descript} />
+               
+               )
 
+           })}
 
-
-            <CardGroup>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
-                    <Card.Body>
-                        <Card.Title>{name}</Card.Title>
-                        <Card.Text>
-                            {descript}
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
-                    <Card.Body>
-                        <Card.Title>{name}</Card.Title>
-                        <Card.Text>
-                            {descript}
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                </Card>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
-                    <Card.Body>
-                        <Card.Title>{name}</Card.Title>
-                        <Card.Text>
-                            {descript}
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <small className="text-muted">Last updated 3 mins ago</small>
-                    </Card.Footer>
-                </Card>
-            </CardGroup>
         </article>
     )
-}
+};
+
+export default Item;
