@@ -7,6 +7,7 @@ import Item from './components/Item';
 import { customFetch } from './components/utils/customFetch';
 import { useEffect } from 'react';
 
+import MenuIZ from './components/Header/trianguloIZ';
 
 const { data } = require('./components/utils/data.js');
 
@@ -22,6 +23,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <MenuIZ/>
       <NavBar />
       <ItemListContainer greeting={"Hola futuros clientes!"} />
       <hr />

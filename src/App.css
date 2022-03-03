@@ -1,17 +1,8 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+
+
+
 
 .App-header {
   background-color: #282c34;
@@ -32,17 +23,19 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.icon{
-  
+.icon {
+
   color: red;
 }
 
-.Item {  display: grid;
+.Item {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-auto-columns: 1fr;
@@ -54,4 +47,56 @@
     ". . .";
   width: 100%;
   height: 100%;
+}
+
+/* Header*/
+.box1{
+  
+  /*
+  background-image: url("./components/IMG/FULL VENTAS TRANSPARENTE - web-04.png");
+  background-size: contain;
+  background-repeat: none;*/
+}
+.techo{
+  display: flex;
+  flex-direction: row;
+  background-image: url("./components/IMG/5.png");
+  background-size: 200px;
+  
+  
+  
+  
+  
+}
+
+.trianguloIZ {
+  /*background-color: #B2B1B9;
+  text-align: center;
+  padding: 15px;*/
+  color: #ffff;
+  width: 50%;
+  height: 300px;
+  
+  background-size: 25% 25%;
+  background-color: transparent;
+  background: linear-gradient(to bottom right, #FFF 0%, #FFD523 50%, #B2B1B9 50%, #FFF 100%);
+  
+  
+  
+}
+.trianguloDR{
+  /*background-color: #B2B1B9;
+  text-align: center;
+  padding: 15px;*/
+  color: #ffff;
+  width: 50%;
+  height: 300px;
+  background: linear-gradient(to bottom left, #FFF 0%, #FFD523 50%, #B2B1B9 50%, #FFF 100%);
+  background-color: transparent;
+  
+}
+/*#B2B1B9*/
+.ImgLogo{
+  width: 20%;
+  height: 20%;
 }

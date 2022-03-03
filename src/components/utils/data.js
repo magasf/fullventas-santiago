@@ -31,7 +31,7 @@
     {
         id: 5,
         name: "Casa galeria",
-        img: "../IMG/house3.jpg",
+        img: "./IMG/house3.jpg",
         cost: 14000,
         descript: '',
     },
